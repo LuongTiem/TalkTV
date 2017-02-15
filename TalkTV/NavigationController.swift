@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+let DARKCOLOR = UIColor(r: 13, g: 32, b: 54)
 class NavigationController: UINavigationController {
     
     override func viewDidLoad() {
@@ -15,7 +15,7 @@ class NavigationController: UINavigationController {
         
         self.interactivePopGestureRecognizer?.delegate = nil
         self.navigationBar.isTranslucent  = false //
-        UINavigationBar.appearance().barTintColor = UIColor.red // mau navi
+        UINavigationBar.appearance().barTintColor =  DARKCOLOR // mau navi
         UINavigationBar.appearance().shadowImage = UIImage() // phan gach chan __
         UINavigationBar.appearance().setBackgroundImage(UIImage.init(), for : UIBarMetrics.default) // nen navi
     

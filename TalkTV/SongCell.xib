@@ -28,35 +28,35 @@
                         <subviews>
                             <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1P-yQ-eqv">
                                 <rect key="frame" x="0.0" y="0.0" width="313" height="50"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.052825272083282471" green="0.1257665753364563" blue="0.21106132864952087" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5EH-kQ-CZV">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="5EH-kQ-CZV">
                                 <rect key="frame" x="8" y="3" width="44.5" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="5EH-kQ-CZV" secondAttribute="height" multiplier="1:1" id="fhT-3b-SYL"/>
+                                    <constraint firstAttribute="width" secondItem="5EH-kQ-CZV" secondAttribute="height" multiplier="1:1" id="PEn-Qn-HNu"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4G-vb-Xik">
-                                <rect key="frame" x="60.5" y="8" width="34" height="16"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <rect key="frame" x="61" y="8" width="34.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eji-gm-J3d">
-                                <rect key="frame" x="60" y="27" width="80" height="13"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <rect key="frame" x="61" y="27" width="83" height="13"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-10" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-2" maxY="0.0"/>
                                 <state key="normal" title="1231231415" image="mxd2_h_icon_13x13_"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJ9-tx-Pqz">
-                                <rect key="frame" x="148" y="27" width="105" height="13"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <rect key="frame" x="152" y="27" width="107" height="13"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-10" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-2" maxY="0.0"/>
-                                <state key="normal" title="12363 Đang xem" image="mxd2_h_icon_13x13_"/>
+                                <state key="normal" title="12363 Đang xem" image="lscs_h_icon_13x13_"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khE-Dd-TPA">
                                 <rect key="frame" x="283" y="8" width="30" height="34"/>
@@ -86,9 +86,9 @@
                         </constraints>
                     </view>
                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xZ-9G-oCN">
-                        <rect key="frame" x="261" y="126" width="36" height="17"/>
+                        <rect key="frame" x="260" y="126" width="37" height="17"/>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                         <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="3" maxY="0.0"/>
                         <state key="normal" title="LIVE"/>
                     </button>
@@ -120,6 +120,8 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="LOGO" width="90" height="90"/>
+        <image name="lscs_h_icon_13x13_" width="13" height="13"/>
         <image name="mxd2_h_icon_13x13_" width="13" height="13"/>
     </resources>
 </document>

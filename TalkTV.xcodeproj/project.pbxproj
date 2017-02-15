@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		51DFEB4B79608580EF8D4792 /* Pods_TalkTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF01377C514E2C8DAA43C28C /* Pods_TalkTV.framework */; };
 		5F01B5051E4C3DF7007BC355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01B5041E4C3DF7007BC355 /* AppDelegate.swift */; };
-		5F01B50A1E4C3DF7007BC355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F01B5081E4C3DF7007BC355 /* Main.storyboard */; };
 		5F01B50C1E4C3DF7007BC355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F01B50B1E4C3DF7007BC355 /* Assets.xcassets */; };
 		5F01B50F1E4C3DF7007BC355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F01B50D1E4C3DF7007BC355 /* LaunchScreen.storyboard */; };
 		5F01B52D1E4C4397007BC355 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01B52C1E4C4397007BC355 /* TabBarController.swift */; };
@@ -39,12 +38,13 @@
 		5FEA92F01E5473CA00BFA397 /* GameVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA92EF1E5473CA00BFA397 /* GameVM.swift */; };
 		5FEAFD511E5190BC00123076 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEAFD501E5190BC00123076 /* AnchorGroup.swift */; };
 		5FEAFD531E5192C300123076 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEAFD521E5192C300123076 /* HomeModel.swift */; };
+		5FEE85E51E54C3770097F721 /* CategoryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEE85E41E54C3770097F721 /* CategoryVM.swift */; };
+		5FEE85E71E54EA930097F721 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEE85E61E54EA930097F721 /* Video.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F01B5011E4C3DF7007BC355 /* TalkTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F01B5041E4C3DF7007BC355 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F01B5091E4C3DF7007BC355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F01B50B1E4C3DF7007BC355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F01B50E1E4C3DF7007BC355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F01B5101E4C3DF7007BC355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +75,8 @@
 		5FEA92EF1E5473CA00BFA397 /* GameVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVM.swift; sourceTree = "<group>"; };
 		5FEAFD501E5190BC00123076 /* AnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
 		5FEAFD521E5192C300123076 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		5FEE85E41E54C3770097F721 /* CategoryVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryVM.swift; sourceTree = "<group>"; };
+		5FEE85E61E54EA930097F721 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		A671C53565D08AE618F7A2CC /* Pods-TalkTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalkTV/Pods-TalkTV.release.xcconfig"; sourceTree = "<group>"; };
 		BE985AB175F9E0726DD8B6AD /* Pods-TalkTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkTV/Pods-TalkTV.debug.xcconfig"; sourceTree = "<group>"; };
 		BF01377C514E2C8DAA43C28C /* Pods_TalkTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,7 +131,6 @@
 				5F01B51A1E4C3E92007BC355 /* Live */,
 				5F01B5161E4C3E51007BC355 /* Main */,
 				5F01B5041E4C3DF7007BC355 /* AppDelegate.swift */,
-				5F01B5081E4C3DF7007BC355 /* Main.storyboard */,
 				5F01B50B1E4C3DF7007BC355 /* Assets.xcassets */,
 				5F01B50D1E4C3DF7007BC355 /* LaunchScreen.storyboard */,
 				5F01B5101E4C3DF7007BC355 /* Info.plist */,
@@ -209,6 +210,7 @@
 			children = (
 				5F01B5341E4C47D1007BC355 /* HomeVC.swift */,
 				5FEA92ED1E54709100BFA397 /* LiveVC.swift */,
+				5FEE85E61E54EA930097F721 /* Video.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -252,6 +254,7 @@
 		5F01B5261E4C4272007BC355 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				5FEE85E31E54C3560097F721 /* ViewModel */,
 				5F01B5291E4C4282007BC355 /* Controller */,
 				5F01B5281E4C427E007BC355 /* View */,
 				5F01B5271E4C4279007BC355 /* Model */,
@@ -365,6 +368,14 @@
 			name = ViewModel;
 			sourceTree = "<group>";
 		};
+		5FEE85E31E54C3560097F721 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FEE85E41E54C3770097F721 /* CategoryVM.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
 		D8A52265E87DF2E393C7481C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -441,7 +452,6 @@
 				5FCD1F331E53A14000D7E1F2 /* CategoryCell.xib in Resources */,
 				5FCD1F2F1E53991D00D7E1F2 /* SongCell.xib in Resources */,
 				5F01B50C1E4C3DF7007BC355 /* Assets.xcassets in Resources */,
-				5F01B50A1E4C3DF7007BC355 /* Main.storyboard in Resources */,
 				5FCD1F2B1E53929100D7E1F2 /* LiveCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +515,7 @@
 				5FCD1F401E53B4AC00D7E1F2 /* GameVC.swift in Sources */,
 				5F01B5051E4C3DF7007BC355 /* AppDelegate.swift in Sources */,
 				5FA5B7E41E4F1B28000E2611 /* BaseVM.swift in Sources */,
+				5FEE85E71E54EA930097F721 /* Video.swift in Sources */,
 				5FCD1F421E53B4CB00D7E1F2 /* SongVM.swift in Sources */,
 				5FCD1F2A1E53929100D7E1F2 /* LiveCell.swift in Sources */,
 				5F01B5351E4C47D1007BC355 /* HomeVC.swift in Sources */,
@@ -519,6 +530,7 @@
 				5FEAFD531E5192C300123076 /* HomeModel.swift in Sources */,
 				5F01B5301E4C43BE007BC355 /* NavigationController.swift in Sources */,
 				5FCD1F271E5377B100D7E1F2 /* TypeModel.swift in Sources */,
+				5FEE85E51E54C3770097F721 /* CategoryVM.swift in Sources */,
 				5F01B52D1E4C4397007BC355 /* TabBarController.swift in Sources */,
 				5FCD1F441E53B68000D7E1F2 /* SongModel.swift in Sources */,
 				5FA40C701E53243200BB200F /* BaseVC.swift in Sources */,
@@ -532,14 +544,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5F01B5081E4C3DF7007BC355 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F01B5091E4C3DF7007BC355 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5F01B50D1E4C3DF7007BC355 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -648,10 +652,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BE985AB175F9E0726DD8B6AD /* Pods-TalkTV.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 7Y55XY9K89;
 				INFOPLIST_FILE = TalkTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reasonamu.TalkTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -663,10 +669,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A671C53565D08AE618F7A2CC /* Pods-TalkTV.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 7Y55XY9K89;
 				INFOPLIST_FILE = TalkTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reasonamu.TalkTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";

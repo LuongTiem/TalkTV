@@ -22,14 +22,13 @@ class SongCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         btnShare.addTarget(self, action: #selector(handleShare), for: .touchUpInside)
-        super.contentView.updateConstraintsIfNeeded()
-        avatarSmall.layer.cornerRadius = avatarSmall.frame.width/2
-        avatarSmall.layer.masksToBounds = true
+        
     }
     
     var songModel : SongModel? {
         
         didSet{
+           
             
             if let bgImage = songModel?.image[1].imageUrl{
                 guard let imgURL = URL(string: bgImage) else { return  }
@@ -38,6 +37,11 @@ class SongCell: UICollectionViewCell {
             
             if let bgImage = songModel?.image[0].imageUrl{
                 guard let imgURL = URL(string: bgImage) else { return  }
+                DispatchQueue.main.async {
+                    self.avatarSmall.layer.cornerRadius = self.avatarSmall.frame.size.width/2
+                    self.avatarSmall.layer.borderWidth = 1
+                    self.avatarSmall.layer.borderColor = UIColor.white.cgColor
+                }
                 avatarSmall.kf.setImage(with: imgURL, placeholder: UIImage(named: "homepage_refresh_tv"), options: [.forceRefresh], progressBlock: nil, completionHandler: nil)
             }
             

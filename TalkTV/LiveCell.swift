@@ -20,11 +20,20 @@ class LiveCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        super.contentView.updateConstraintsIfNeeded()
-        avatarSmall.layer.cornerRadius = avatarSmall.frame.width/2
-        avatarSmall.layer.masksToBounds = true
+//        // Initialization code
+//        print("Widht \(avatarSmall.frame.width)")
+//        print("Height \(avatarSmall.frame.height)")
+//        //self.avatarSmall.frame.size.width/2
+//        self.avatarSmall.layer.cornerRadius = 30
+//        self.avatarSmall.layer.borderWidth = 1
+//        self.avatarSmall.layer.borderColor = UIColor.white.cgColor
+  
+      
+        
     }
+    
+    
+    
     
     var liveModel: SongModel? {
         didSet {
@@ -52,6 +61,13 @@ class LiveCell: UICollectionViewCell {
             
             if let imagesAvatar = liveModel?.image[0].imageUrl{
                 guard let imgURL = URL(string: imagesAvatar) else { return  }
+                
+                DispatchQueue.main.async {
+                    self.avatarSmall.layer.cornerRadius = self.avatarSmall.frame.size.width/2
+                    self.avatarSmall.layer.borderWidth = 1
+                    self.avatarSmall.layer.borderColor = UIColor.white.cgColor
+                }
+                
                 avatarSmall.kf.setImage(with: imgURL, placeholder: UIImage(named: "homepage_refresh_tv"), options: [.forceRefresh], progressBlock: nil, completionHandler: nil)
             }
             
@@ -59,3 +75,6 @@ class LiveCell: UICollectionViewCell {
     }
 
 }
+
+
+

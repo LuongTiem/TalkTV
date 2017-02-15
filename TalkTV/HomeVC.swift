@@ -17,7 +17,7 @@ class HomeVC: UIViewController, CarbonTabSwipeNavigationDelegate{
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
         setup()
-      
+        
     }
     
     
@@ -37,7 +37,7 @@ class HomeVC: UIViewController, CarbonTabSwipeNavigationDelegate{
         
         carbonTabSwipeNavigation = CarbonTabSwipeNavigation(items: item, delegate: self)
         carbonTabSwipeNavigation?.setIndicatorColor(UIColor.white)
-        carbonTabSwipeNavigation?.carbonSegmentedControl?.backgroundColor = UIColor.red
+        carbonTabSwipeNavigation?.carbonSegmentedControl?.backgroundColor = DARKCOLOR
         carbonTabSwipeNavigation?.insert(intoRootViewController: self)
         carbonTabSwipeNavigation?.setTabExtraWidth(view.frame.width)
         carbonTabSwipeNavigation?.carbonSegmentedControl?.setWidth(view.frame.width/4, forSegmentAt: 0)
@@ -51,6 +51,7 @@ class HomeVC: UIViewController, CarbonTabSwipeNavigationDelegate{
         menuBar.topAnchor.constraint(equalTo: self.topLayoutGuide.bottomAnchor, constant: -50).isActive = true
         menuBar.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
+        view.backgroundColor = BGCOLOR
 
         
     }
@@ -81,13 +82,37 @@ class HomeVC: UIViewController, CarbonTabSwipeNavigationDelegate{
         
     }
     
+    func carbonTabSwipeNavigation(_ carbonTabSwipeNavigation: CarbonTabSwipeNavigation, willMoveAt index: UInt) {
+       
+        
+        let live = LiveVC.init()
+        let showbiz = SongVC.init()
+        let game = GameVC.init()
+        let category = CategoryVC.init()
+        
+        switch index {
+        case 0:
+            return live.updateFocusIfNeeded()
+        case 1:
+            return showbiz.updateFocusIfNeeded()
+        case 2:
+            return game.updateFocusIfNeeded()
+        case 3 :
+            return category.updateFocusIfNeeded()
+        default:
+            return live.updateFocusIfNeeded()
+        }
+        
+        
+    }
+    
 
  
     
     
     lazy var menuBar : UIView = {
         let views = UIView()
-        views.backgroundColor = UIColor.red
+        views.backgroundColor = DARKCOLOR
         views.translatesAutoresizingMaskIntoConstraints  = false
         return views
     }()

@@ -44,9 +44,9 @@ class TabBarController: UITabBarController {
     
     func addChildViewControllers() {
         setupOneChildViewController("Live", image: "menu_homepage_nor", selectedImage: "menu_homepage_sel", controller: HomeVC.init())
-        setupOneChildViewController("Song", image: "menu_youxi_nor", selectedImage: "menu_youxi_sel", controller: SongVC.init())
-        setupOneChildViewController("Game", image: "menu_yule_nor", selectedImage: "menu_yule_sel", controller: GameVC.init())
-        setupOneChildViewController("Category", image: "menu_goddess_nor", selectedImage: "menu_goddess_sel", controller: CategoryVC.init())
+        setupOneChildViewController("Song", image: "menu_youxi_nor", selectedImage: "menu_youxi_sel", controller: Video.init())
+        setupOneChildViewController("Game", image: "menu_yule_nor", selectedImage: "menu_yule_sel", controller: Video.init())
+        setupOneChildViewController("Category", image: "menu_goddess_nor", selectedImage: "menu_goddess_sel", controller: Video.init())
         
     }
     

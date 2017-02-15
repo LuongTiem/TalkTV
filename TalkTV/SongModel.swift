@@ -18,6 +18,7 @@ class SongModel {
     var image = [Image]()
     var share : Share?
     var subtitle: String?
+    var url : String?
     
     init() {
         
@@ -31,8 +32,15 @@ class SongModel {
     func parse(from json: JSON) {
         
         if let extra : Dictionary = json["extra"].dictionaryObject {
-            let roomId = extra["roomId"] as! Int
-            self.roomId = roomId
+            if let roomId :Int  =  extra["roomId"] as? Int {
+                self.roomId = roomId
+            }
+            
+            if let url : String = extra["url"] as? String {
+                self.url = url
+            }
+//            let roomId = extra["roomId"] as! Int
+//            self.roomId = roomId
         }
         
         

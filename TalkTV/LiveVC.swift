@@ -44,5 +44,8 @@ extension LiveVC {
         
     }
     
-   
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let video = Video()
+        self.navigationController?.pushViewController(video, animated: true)
+    }
 }

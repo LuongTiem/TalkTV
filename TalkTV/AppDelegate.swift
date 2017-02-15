@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //-- //
+        
         window = UIWindow.init()
+        UIApplication.shared.statusBarStyle = .lightContent
         let tabbar = TabBarController.init()
         window?.rootViewController = tabbar
         window?.makeKeyAndVisible()
@@ -26,10 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, willChangeStatusBarFrame newStatusBarFrame: CGRect) {
+       
         let statusbar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
         if statusbar.responds(to: #selector(setter: UIView.backgroundColor)) {
-            statusbar.backgroundColor = UIColor(r: 194, g: 31, b: 31)
-            
+            statusbar.backgroundColor =  UIColor(r: 8, g: 23, b: 40)
         }
     }
     

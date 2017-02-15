@@ -8,12 +8,18 @@
 
 import UIKit
 
-class CategoryVC: BaseVC {
-
+class CategoryVC: BaseTabHomeVC {
+    lazy var categoryVM: CategoryVM = CategoryVM()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        collectionView.register(UINib(nibName: "CategoryCell", bundle: nil), forCellWithReuseIdentifier: "CategoryCell")
+        
+        let layout = UICollectionViewFlowLayout()
+            layout.scrollDirection = .vertical
+            layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        collectionView.setCollectionViewLayout(layout, animated: true)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +28,41 @@ class CategoryVC: BaseVC {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+}
+
+extension CategoryVC {
+    
+    override func loadData() {
+        baseVM = self.categoryVM
+        categoryVM.requestData {
+            self.collectionView.reloadData()
+            self.loadDataFinished()
+        }
     }
-    */
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
+        cell.categoryModel = categoryVM.datas[indexPath.row]
+        return cell
+    }
+    
+ 
+    
+    override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        if UIDevice.current.orientation.isLandscape == true {
+             let widthLandscape = (collectionView.frame.width - 50)/3
+            return CGSize(width: widthLandscape  , height: (widthLandscape*3)/2)
+        }
+        let width = (collectionView.frame.width - 30)/2
+        return CGSize(width: width, height: (width*3)/2)
+    }
+    
+    
+    override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
 
 }

@@ -17,7 +17,7 @@ class BaseTabHomeVC: BaseVC {
     
     lazy var collectionView : UICollectionView  = {
         let layout =  UICollectionViewFlowLayout()
-        //            layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+                    layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         layout.scrollDirection = .vertical
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -59,7 +59,7 @@ extension BaseTabHomeVC {
         // Do any additional setup after loading the view.
         refresh   =  CarbonSwipeRefresh.init(scrollView: self.collectionView)
         refresh?.colors = [UIColor.red , UIColor.blue]
-        
+        view.backgroundColor = BGCOLOR
         view.addSubview(collectionView)
         collectionView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         collectionView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
@@ -80,6 +80,8 @@ extension BaseTabHomeVC {
     //MARK- PULL REFRESH
     func handlePullRefresh(){
         self.resetData()
+        self.baseVM.datas.removeAll()
+        self.collectionView.reloadData()
         self.loadData()
         self.refresh?.endRefreshing()
     }
@@ -90,9 +92,13 @@ extension BaseTabHomeVC {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         collectionView.collectionViewLayout.invalidateLayout()
-        collectionView.collectionViewLayout.finalizeCollectionViewUpdates()
+        
     }
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        collectionView.collectionViewLayout.invalidateLayout()
+    }
     
     
 }
@@ -103,13 +109,21 @@ extension BaseTabHomeVC : UICollectionViewDelegateFlowLayout , UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         if UIDevice.current.orientation.isLandscape == true {
-            return CGSize(width: (collectionView.frame.width-30)/2 , height: (collectionView.frame.width-30)/2)
+            
+            let width = (collectionView.frame.width-30)/2
+            return CGSize(width: width , height: (width*2)/3)
         }
         
-        return CGSize(width: collectionView.frame.width , height: collectionView.frame.height/2)
+        return CGSize(width: (collectionView.frame.width) , height: ((collectionView.frame.width)*2)/3)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    
+        if UIDevice.current.orientation.isLandscape == true {
+            
+           return 10
+        }
+        
         return 0
     }
     
