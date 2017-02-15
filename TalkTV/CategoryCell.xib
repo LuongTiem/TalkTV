@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryCell" customModule="TalkTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="202" height="223"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="202" height="223"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mBd-Le-pW8">
+                        <rect key="frame" x="0.0" y="0.0" width="202" height="223"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tA-uU-g4P">
+                        <rect key="frame" x="133" y="8" width="61" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="-10" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-2" maxY="0.0"/>
+                        <state key="normal" title="23456" image="fbyx_icon_13x13_"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gaming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejm-Xb-wAO">
+                        <rect key="frame" x="8" y="200" width="44.5" height="15"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gamingkkkkkkk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJu-tb-fPb">
+                        <rect key="frame" x="8" y="179" width="105" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Ejm-Xb-wAO" firstAttribute="top" secondItem="eJu-tb-fPb" secondAttribute="bottom" constant="4" id="2NT-tm-xAW"/>
+                <constraint firstItem="mBd-Le-pW8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8yT-Pc-PYe"/>
+                <constraint firstAttribute="bottom" secondItem="Ejm-Xb-wAO" secondAttribute="bottom" constant="8" id="EY6-YH-bw9"/>
+                <constraint firstAttribute="trailing" secondItem="mBd-Le-pW8" secondAttribute="trailing" id="Nx6-BW-PAW"/>
+                <constraint firstAttribute="bottom" secondItem="mBd-Le-pW8" secondAttribute="bottom" id="Ov1-qg-rmV"/>
+                <constraint firstItem="Ejm-Xb-wAO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="U9e-zj-LCs"/>
+                <constraint firstItem="0tA-uU-g4P" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="ctV-dQ-0m9"/>
+                <constraint firstAttribute="trailing" secondItem="0tA-uU-g4P" secondAttribute="trailing" constant="8" id="e7d-Jt-Zym"/>
+                <constraint firstItem="eJu-tb-fPb" firstAttribute="leading" secondItem="Ejm-Xb-wAO" secondAttribute="leading" id="eak-ka-Ylr"/>
+                <constraint firstItem="mBd-Le-pW8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="h4e-Ui-8Rg"/>
+            </constraints>
+            <size key="customSize" width="202" height="223"/>
+            <connections>
+                <outlet property="currentViews" destination="0tA-uU-g4P" id="Qsu-HZ-7sd"/>
+                <outlet property="imageViews" destination="mBd-Le-pW8" id="4ki-5l-UvL"/>
+                <outlet property="subTitle" destination="Ejm-Xb-wAO" id="GBl-AY-5oe"/>
+                <outlet property="title" destination="eJu-tb-fPb" id="h8t-1K-Rre"/>
+            </connections>
+            <point key="canvasLocation" x="101" y="138.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="fbyx_icon_13x13_" width="13" height="13"/>
+    </resources>
+</document>

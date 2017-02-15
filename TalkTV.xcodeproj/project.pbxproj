@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		51DFEB4B79608580EF8D4792 /* Pods_TalkTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF01377C514E2C8DAA43C28C /* Pods_TalkTV.framework */; };
+		5F01B5051E4C3DF7007BC355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01B5041E4C3DF7007BC355 /* AppDelegate.swift */; };
+		5F01B50A1E4C3DF7007BC355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F01B5081E4C3DF7007BC355 /* Main.storyboard */; };
+		5F01B50C1E4C3DF7007BC355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F01B50B1E4C3DF7007BC355 /* Assets.xcassets */; };
+		5F01B50F1E4C3DF7007BC355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F01B50D1E4C3DF7007BC355 /* LaunchScreen.storyboard */; };
+		5F01B52D1E4C4397007BC355 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01B52C1E4C4397007BC355 /* TabBarController.swift */; };
+		5F01B5301E4C43BE007BC355 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01B52F1E4C43BE007BC355 /* NavigationController.swift */; };
+		5F01B5331E4C4487007BC355 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01B5321E4C4487007BC355 /* UIColor-Extension.swift */; };
+		5F01B5351E4C47D1007BC355 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01B5341E4C47D1007BC355 /* HomeVC.swift */; };
+		5F01B5371E4C47DF007BC355 /* SongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01B5361E4C47DF007BC355 /* SongVC.swift */; };
+		5F01B53B1E4C47FB007BC355 /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F01B53A1E4C47FB007BC355 /* CategoryVC.swift */; };
+		5FA40C641E52FDBE00BB200F /* Object-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA40C631E52FDBE00BB200F /* Object-Extension.swift */; };
+		5FA40C671E52FF8800BB200F /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA40C661E52FF8800BB200F /* HomeVM.swift */; };
+		5FA40C701E53243200BB200F /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA40C6F1E53243200BB200F /* BaseVC.swift */; };
+		5FA5B7DF1E4EF774000E2611 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA5B7DE1E4EF774000E2611 /* NetworkTool.swift */; };
+		5FA5B7E41E4F1B28000E2611 /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA5B7E31E4F1B28000E2611 /* BaseVM.swift */; };
+		5FCD1F271E5377B100D7E1F2 /* TypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F261E5377B100D7E1F2 /* TypeModel.swift */; };
+		5FCD1F2A1E53929100D7E1F2 /* LiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F281E53929100D7E1F2 /* LiveCell.swift */; };
+		5FCD1F2B1E53929100D7E1F2 /* LiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCD1F291E53929100D7E1F2 /* LiveCell.xib */; };
+		5FCD1F2E1E53991D00D7E1F2 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F2C1E53991D00D7E1F2 /* SongCell.swift */; };
+		5FCD1F2F1E53991D00D7E1F2 /* SongCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCD1F2D1E53991D00D7E1F2 /* SongCell.xib */; };
+		5FCD1F321E53A14000D7E1F2 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F301E53A14000D7E1F2 /* CategoryCell.swift */; };
+		5FCD1F331E53A14000D7E1F2 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCD1F311E53A14000D7E1F2 /* CategoryCell.xib */; };
+		5FCD1F371E53AB9600D7E1F2 /* BaseTabHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F361E53AB9600D7E1F2 /* BaseTabHomeVC.swift */; };
+		5FCD1F401E53B4AC00D7E1F2 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F3F1E53B4AC00D7E1F2 /* GameVC.swift */; };
+		5FCD1F421E53B4CB00D7E1F2 /* SongVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F411E53B4CB00D7E1F2 /* SongVM.swift */; };
+		5FCD1F441E53B68000D7E1F2 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCD1F431E53B68000D7E1F2 /* SongModel.swift */; };
+		5FEA92EC1E54655E00BFA397 /* LiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA92EB1E54655E00BFA397 /* LiveModel.swift */; };
+		5FEA92EE1E54709100BFA397 /* LiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA92ED1E54709100BFA397 /* LiveVC.swift */; };
+		5FEA92F01E5473CA00BFA397 /* GameVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEA92EF1E5473CA00BFA397 /* GameVM.swift */; };
+		5FEAFD511E5190BC00123076 /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEAFD501E5190BC00123076 /* AnchorGroup.swift */; };
+		5FEAFD531E5192C300123076 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEAFD521E5192C300123076 /* HomeModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5F01B5011E4C3DF7007BC355 /* TalkTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F01B5041E4C3DF7007BC355 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F01B5091E4C3DF7007BC355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F01B50B1E4C3DF7007BC355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F01B50E1E4C3DF7007BC355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F01B5101E4C3DF7007BC355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F01B52C1E4C4397007BC355 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		5F01B52F1E4C43BE007BC355 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		5F01B5321E4C4487007BC355 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		5F01B5341E4C47D1007BC355 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		5F01B5361E4C47DF007BC355 /* SongVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongVC.swift; sourceTree = "<group>"; };
+		5F01B53A1E4C47FB007BC355 /* CategoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
+		5FA40C631E52FDBE00BB200F /* Object-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Object-Extension.swift"; sourceTree = "<group>"; };
+		5FA40C661E52FF8800BB200F /* HomeVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		5FA40C6F1E53243200BB200F /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		5FA5B7DE1E4EF774000E2611 /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
+		5FA5B7E31E4F1B28000E2611 /* BaseVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
+		5FCD1F261E5377B100D7E1F2 /* TypeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeModel.swift; sourceTree = "<group>"; };
+		5FCD1F281E53929100D7E1F2 /* LiveCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCell.swift; sourceTree = "<group>"; };
+		5FCD1F291E53929100D7E1F2 /* LiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveCell.xib; sourceTree = "<group>"; };
+		5FCD1F2C1E53991D00D7E1F2 /* SongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		5FCD1F2D1E53991D00D7E1F2 /* SongCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongCell.xib; sourceTree = "<group>"; };
+		5FCD1F301E53A14000D7E1F2 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		5FCD1F311E53A14000D7E1F2 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		5FCD1F361E53AB9600D7E1F2 /* BaseTabHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabHomeVC.swift; sourceTree = "<group>"; };
+		5FCD1F3F1E53B4AC00D7E1F2 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		5FCD1F411E53B4CB00D7E1F2 /* SongVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongVM.swift; sourceTree = "<group>"; };
+		5FCD1F431E53B68000D7E1F2 /* SongModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
+		5FEA92EB1E54655E00BFA397 /* LiveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveModel.swift; sourceTree = "<group>"; };
+		5FEA92ED1E54709100BFA397 /* LiveVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveVC.swift; sourceTree = "<group>"; };
+		5FEA92EF1E5473CA00BFA397 /* GameVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVM.swift; sourceTree = "<group>"; };
+		5FEAFD501E5190BC00123076 /* AnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
+		5FEAFD521E5192C300123076 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		A671C53565D08AE618F7A2CC /* Pods-TalkTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalkTV/Pods-TalkTV.release.xcconfig"; sourceTree = "<group>"; };
+		BE985AB175F9E0726DD8B6AD /* Pods-TalkTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalkTV/Pods-TalkTV.debug.xcconfig"; sourceTree = "<group>"; };
+		BF01377C514E2C8DAA43C28C /* Pods_TalkTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F01B4FE1E4C3DF7007BC355 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51DFEB4B79608580EF8D4792 /* Pods_TalkTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C264766CDB9BD874EBD01BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF01377C514E2C8DAA43C28C /* Pods_TalkTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F01B4F81E4C3DF6007BC355 = {
+			isa = PBXGroup;
+			children = (
+				5F01B5031E4C3DF7007BC355 /* TalkTV */,
+				5F01B5021E4C3DF7007BC355 /* Products */,
+				D8A52265E87DF2E393C7481C /* Pods */,
+				2C264766CDB9BD874EBD01BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5F01B5021E4C3DF7007BC355 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F01B5011E4C3DF7007BC355 /* TalkTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F01B5031E4C3DF7007BC355 /* TalkTV */ = {
+			isa = PBXGroup;
+			children = (
+				5F01B52B1E4C4301007BC355 /* Tool */,
+				5F01B52A1E4C42FC007BC355 /* Network */,
+				5F01B5261E4C4272007BC355 /* Category */,
+				5FCD1F3A1E53B44C00D7E1F2 /* Game */,
+				5F01B51E1E4C4238007BC355 /* Song */,
+				5F01B51A1E4C3E92007BC355 /* Live */,
+				5F01B5161E4C3E51007BC355 /* Main */,
+				5F01B5041E4C3DF7007BC355 /* AppDelegate.swift */,
+				5F01B5081E4C3DF7007BC355 /* Main.storyboard */,
+				5F01B50B1E4C3DF7007BC355 /* Assets.xcassets */,
+				5F01B50D1E4C3DF7007BC355 /* LaunchScreen.storyboard */,
+				5F01B5101E4C3DF7007BC355 /* Info.plist */,
+			);
+			path = TalkTV;
+			sourceTree = "<group>";
+		};
+		5F01B5161E4C3E51007BC355 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5FA5B7E21E4F1391000E2611 /* ViewModel */,
+				5F01B5181E4C3E5D007BC355 /* Model */,
+				5F01B5191E4C3E62007BC355 /* View */,
+				5F01B5171E4C3E56007BC355 /* Controller */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		5F01B5171E4C3E56007BC355 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F01B52C1E4C4397007BC355 /* TabBarController.swift */,
+				5F01B52F1E4C43BE007BC355 /* NavigationController.swift */,
+				5FA40C6F1E53243200BB200F /* BaseVC.swift */,
+				5FCD1F361E53AB9600D7E1F2 /* BaseTabHomeVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5F01B5181E4C3E5D007BC355 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FEAFD501E5190BC00123076 /* AnchorGroup.swift */,
+				5FEAFD521E5192C300123076 /* HomeModel.swift */,
+				5FCD1F261E5377B100D7E1F2 /* TypeModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5F01B5191E4C3E62007BC355 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5F01B51A1E4C3E92007BC355 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				5FA40C651E52FF6D00BB200F /* ViewModel */,
+				5F01B51D1E4C422F007BC355 /* Controller */,
+				5F01B51C1E4C422A007BC355 /* View */,
+				5F01B51B1E4C4222007BC355 /* Model */,
+			);
+			name = Live;
+			sourceTree = "<group>";
+		};
+		5F01B51B1E4C4222007BC355 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FEA92EB1E54655E00BFA397 /* LiveModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5F01B51C1E4C422A007BC355 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F281E53929100D7E1F2 /* LiveCell.swift */,
+				5FCD1F291E53929100D7E1F2 /* LiveCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5F01B51D1E4C422F007BC355 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F01B5341E4C47D1007BC355 /* HomeVC.swift */,
+				5FEA92ED1E54709100BFA397 /* LiveVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5F01B51E1E4C4238007BC355 /* Song */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F381E53B3F100D7E1F2 /* ViewModel */,
+				5F01B5211E4C4251007BC355 /* Model */,
+				5F01B5201E4C424B007BC355 /* Controller */,
+				5F01B51F1E4C4242007BC355 /* View */,
+			);
+			name = Song;
+			sourceTree = "<group>";
+		};
+		5F01B51F1E4C4242007BC355 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F2C1E53991D00D7E1F2 /* SongCell.swift */,
+				5FCD1F2D1E53991D00D7E1F2 /* SongCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5F01B5201E4C424B007BC355 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F01B5361E4C47DF007BC355 /* SongVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5F01B5211E4C4251007BC355 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F431E53B68000D7E1F2 /* SongModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5F01B5261E4C4272007BC355 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5F01B5291E4C4282007BC355 /* Controller */,
+				5F01B5281E4C427E007BC355 /* View */,
+				5F01B5271E4C4279007BC355 /* Model */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		5F01B5271E4C4279007BC355 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5F01B5281E4C427E007BC355 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F301E53A14000D7E1F2 /* CategoryCell.swift */,
+				5FCD1F311E53A14000D7E1F2 /* CategoryCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5F01B5291E4C4282007BC355 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F01B53A1E4C47FB007BC355 /* CategoryVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5F01B52A1E4C42FC007BC355 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5FA5B7DE1E4EF774000E2611 /* NetworkTool.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		5F01B52B1E4C4301007BC355 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				5F01B5321E4C4487007BC355 /* UIColor-Extension.swift */,
+				5FA40C631E52FDBE00BB200F /* Object-Extension.swift */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		5FA40C651E52FF6D00BB200F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FA40C661E52FF8800BB200F /* HomeVM.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FA5B7E21E4F1391000E2611 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FA5B7E31E4F1B28000E2611 /* BaseVM.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FCD1F381E53B3F100D7E1F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F411E53B4CB00D7E1F2 /* SongVM.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		5FCD1F3A1E53B44C00D7E1F2 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F3E1E53B49B00D7E1F2 /* ViewModel */,
+				5FCD1F3D1E53B49500D7E1F2 /* Controller */,
+				5FCD1F3C1E53B48E00D7E1F2 /* Model */,
+				5FCD1F3B1E53B48600D7E1F2 /* View */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		5FCD1F3B1E53B48600D7E1F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5FCD1F3C1E53B48E00D7E1F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5FCD1F3D1E53B49500D7E1F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5FCD1F3F1E53B4AC00D7E1F2 /* GameVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5FCD1F3E1E53B49B00D7E1F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5FEA92EF1E5473CA00BFA397 /* GameVM.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		D8A52265E87DF2E393C7481C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE985AB175F9E0726DD8B6AD /* Pods-TalkTV.debug.xcconfig */,
+				A671C53565D08AE618F7A2CC /* Pods-TalkTV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F01B5001E4C3DF7007BC355 /* TalkTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F01B5131E4C3DF7007BC355 /* Build configuration list for PBXNativeTarget "TalkTV" */;
+			buildPhases = (
+				D5703C9F3FF0B551622B34E3 /* [CP] Check Pods Manifest.lock */,
+				5F01B4FD1E4C3DF7007BC355 /* Sources */,
+				5F01B4FE1E4C3DF7007BC355 /* Frameworks */,
+				5F01B4FF1E4C3DF7007BC355 /* Resources */,
+				36B90F9FE90594C39A456743 /* [CP] Embed Pods Frameworks */,
+				BAC48CF7471581D86FE23E58 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalkTV;
+			productName = TalkTV;
+			productReference = 5F01B5011E4C3DF7007BC355 /* TalkTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F01B4F91E4C3DF6007BC355 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ReasonAmu;
+				TargetAttributes = {
+					5F01B5001E4C3DF7007BC355 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7Y55XY9K89;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5F01B4FC1E4C3DF6007BC355 /* Build configuration list for PBXProject "TalkTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F01B4F81E4C3DF6007BC355;
+			productRefGroup = 5F01B5021E4C3DF7007BC355 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F01B5001E4C3DF7007BC355 /* TalkTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F01B4FF1E4C3DF7007BC355 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F01B50F1E4C3DF7007BC355 /* LaunchScreen.storyboard in Resources */,
+				5FCD1F331E53A14000D7E1F2 /* CategoryCell.xib in Resources */,
+				5FCD1F2F1E53991D00D7E1F2 /* SongCell.xib in Resources */,
+				5F01B50C1E4C3DF7007BC355 /* Assets.xcassets in Resources */,
+				5F01B50A1E4C3DF7007BC355 /* Main.storyboard in Resources */,
+				5FCD1F2B1E53929100D7E1F2 /* LiveCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36B90F9FE90594C39A456743 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TalkTV/Pods-TalkTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAC48CF7471581D86FE23E58 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TalkTV/Pods-TalkTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5703C9F3FF0B551622B34E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F01B4FD1E4C3DF7007BC355 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FEA92EC1E54655E00BFA397 /* LiveModel.swift in Sources */,
+				5FCD1F401E53B4AC00D7E1F2 /* GameVC.swift in Sources */,
+				5F01B5051E4C3DF7007BC355 /* AppDelegate.swift in Sources */,
+				5FA5B7E41E4F1B28000E2611 /* BaseVM.swift in Sources */,
+				5FCD1F421E53B4CB00D7E1F2 /* SongVM.swift in Sources */,
+				5FCD1F2A1E53929100D7E1F2 /* LiveCell.swift in Sources */,
+				5F01B5351E4C47D1007BC355 /* HomeVC.swift in Sources */,
+				5FEA92F01E5473CA00BFA397 /* GameVM.swift in Sources */,
+				5FA40C671E52FF8800BB200F /* HomeVM.swift in Sources */,
+				5FEA92EE1E54709100BFA397 /* LiveVC.swift in Sources */,
+				5F01B53B1E4C47FB007BC355 /* CategoryVC.swift in Sources */,
+				5F01B5331E4C4487007BC355 /* UIColor-Extension.swift in Sources */,
+				5FCD1F2E1E53991D00D7E1F2 /* SongCell.swift in Sources */,
+				5FEAFD511E5190BC00123076 /* AnchorGroup.swift in Sources */,
+				5FCD1F371E53AB9600D7E1F2 /* BaseTabHomeVC.swift in Sources */,
+				5FEAFD531E5192C300123076 /* HomeModel.swift in Sources */,
+				5F01B5301E4C43BE007BC355 /* NavigationController.swift in Sources */,
+				5FCD1F271E5377B100D7E1F2 /* TypeModel.swift in Sources */,
+				5F01B52D1E4C4397007BC355 /* TabBarController.swift in Sources */,
+				5FCD1F441E53B68000D7E1F2 /* SongModel.swift in Sources */,
+				5FA40C701E53243200BB200F /* BaseVC.swift in Sources */,
+				5FCD1F321E53A14000D7E1F2 /* CategoryCell.swift in Sources */,
+				5FA5B7DF1E4EF774000E2611 /* NetworkTool.swift in Sources */,
+				5F01B5371E4C47DF007BC355 /* SongVC.swift in Sources */,
+				5FA40C641E52FDBE00BB200F /* Object-Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5F01B5081E4C3DF7007BC355 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F01B5091E4C3DF7007BC355 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F01B50D1E4C3DF7007BC355 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F01B50E1E4C3DF7007BC355 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F01B5111E4C3DF7007BC355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F01B5121E4C3DF7007BC355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F01B5141E4C3DF7007BC355 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE985AB175F9E0726DD8B6AD /* Pods-TalkTV.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7Y55XY9K89;
+				INFOPLIST_FILE = TalkTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reasonamu.TalkTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5F01B5151E4C3DF7007BC355 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A671C53565D08AE618F7A2CC /* Pods-TalkTV.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 7Y55XY9K89;
+				INFOPLIST_FILE = TalkTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reasonamu.TalkTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F01B4FC1E4C3DF6007BC355 /* Build configuration list for PBXProject "TalkTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F01B5111E4C3DF7007BC355 /* Debug */,
+				5F01B5121E4C3DF7007BC355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F01B5131E4C3DF7007BC355 /* Build configuration list for PBXNativeTarget "TalkTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F01B5141E4C3DF7007BC355 /* Debug */,
+				5F01B5151E4C3DF7007BC355 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F01B4F91E4C3DF6007BC355 /* Project object */;
+}
