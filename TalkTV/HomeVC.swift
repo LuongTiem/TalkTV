@@ -16,20 +16,30 @@ class HomeVC: UIViewController, CarbonTabSwipeNavigationDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.automaticallyAdjustsScrollViewInsets = false
-        setup()
+         setup()
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+       
     }
     
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         print(size)
+        configUI(size: size)
         
+    }
+    
+    func configUI(size : CGSize){
         carbonTabSwipeNavigation?.setTabExtraWidth(view.frame.width)
         carbonTabSwipeNavigation?.carbonSegmentedControl?.setWidth(size.width/4, forSegmentAt: 0)
         carbonTabSwipeNavigation?.carbonSegmentedControl?.setWidth(size.width/4, forSegmentAt: 1)
         carbonTabSwipeNavigation?.carbonSegmentedControl?.setWidth(size.width/4, forSegmentAt: 2)
         carbonTabSwipeNavigation?.carbonSegmentedControl?.setWidth(size.width/4, forSegmentAt: 3)
+        
     }
     
     func setup () {
@@ -39,11 +49,8 @@ class HomeVC: UIViewController, CarbonTabSwipeNavigationDelegate{
         carbonTabSwipeNavigation?.setIndicatorColor(UIColor.white)
         carbonTabSwipeNavigation?.carbonSegmentedControl?.backgroundColor = DARKCOLOR
         carbonTabSwipeNavigation?.insert(intoRootViewController: self)
-        carbonTabSwipeNavigation?.setTabExtraWidth(view.frame.width)
-        carbonTabSwipeNavigation?.carbonSegmentedControl?.setWidth(view.frame.width/4, forSegmentAt: 0)
-        carbonTabSwipeNavigation?.carbonSegmentedControl?.setWidth(view.frame.width/4, forSegmentAt: 1)
-        carbonTabSwipeNavigation?.carbonSegmentedControl?.setWidth(view.frame.width/4, forSegmentAt: 2)
-        carbonTabSwipeNavigation?.carbonSegmentedControl?.setWidth(view.frame.width/4, forSegmentAt: 3)
+        
+        configUI(size: view.frame.size)
         
         view.addSubview(menuBar)
         menuBar.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true

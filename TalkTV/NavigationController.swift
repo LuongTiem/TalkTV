@@ -18,7 +18,7 @@ class NavigationController: UINavigationController {
         UINavigationBar.appearance().barTintColor =  DARKCOLOR // mau navi
         UINavigationBar.appearance().shadowImage = UIImage() // phan gach chan __
         UINavigationBar.appearance().setBackgroundImage(UIImage.init(), for : UIBarMetrics.default) // nen navi
-    
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
         self.hidesBarsOnSwipe = true
     }
 
@@ -27,7 +27,7 @@ class NavigationController: UINavigationController {
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         
         //        print("Count viewcontrollers: \(self.viewControllers.count)")
-        viewController.navigationItem.titleView = titleViews()
+        viewController.navigationItem.leftBarButtonItem = setAvatarTalk()
         if self.viewControllers.count < 1 {
             
             if viewController.isKind(of: HomeVC.self) {
@@ -75,6 +75,12 @@ class NavigationController: UINavigationController {
         searchItem.contentHorizontalAlignment = .right
         searchItem.addTarget(self, action: #selector(handleSearch), for: .touchUpInside)
         return UIBarButtonItem.init(customView: searchItem)
+        
+    }
+    
+    func setAvatarTalk() -> UIBarButtonItem {
+        let avatar = UIBarButtonItem(image:  UIImage(named: "logo-1")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal), style: .done, target: self, action: nil)
+        return avatar
         
     }
     
